@@ -1,3 +1,4 @@
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,15 +11,12 @@ import { BotaoDefaultComponent } from './componentes/botao-default/botao-default
 @NgModule({
   declarations: [
     AppComponent,
-    TelaInicioComponent,
-    TelaLoginComponent,
-    BotaoDefaultComponent
+    TelaLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
