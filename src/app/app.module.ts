@@ -11,7 +11,6 @@ import { BotaoDefaultComponent } from './componentes/botao-default/botao-default
 @NgModule({
   declarations: [
     AppComponent,
-    TelaLoginComponent
   ],
   imports: [
     BrowserModule,
