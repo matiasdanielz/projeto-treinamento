@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Botao } from '../../models/botao';
-import { BotoesService } from '../../services/botoes.service';
+import { Botao } from '../../../models/botao';
+import { BotoesService } from '../../../services/botoes.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,7 +19,7 @@ export class TelaInicioComponent {
     this.botoes = botoesService.getBotoes();
   }
 
-  public apresentarTexto(){
-    this.router.navigate(['/autenticacao']);
+  public moverParaLogin(){
+    this.router.navigate(['/Autenticacao']);
   }
 }

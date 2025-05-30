@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { TelaInicioComponent } from '../tela-inicio/tela-inicio.component';
+import { TelaInicioComponent } from './tela-inicio/tela-inicio.component';
 
 const routes: Routes = [
   {

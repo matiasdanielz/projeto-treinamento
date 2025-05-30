@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { TelaLoginComponent } from '../tela-login/tela-login.component';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
+    redirectTo: 'Login',
+    pathMatch: 'prefix'
   },
   {
-    path: 'login',
+    path: 'Login',
     component: TelaLoginComponent
   }
 ];

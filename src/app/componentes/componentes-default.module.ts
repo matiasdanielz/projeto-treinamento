@@ -10,6 +10,7 @@ import { BotaoDefaultComponent } from './botao-default/botao-default.component';
     CommonModule
   ],
   exports: [
+    BotaoDefaultComponent
   ]
 })
 export class ComponentesDefaultModule { }

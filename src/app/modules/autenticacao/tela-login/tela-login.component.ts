@@ -16,6 +16,6 @@ export class TelaLoginComponent {
   }
 
   public moverParaInicio(){
-    this.router.navigate(['/inicio']);
+    this.router.navigate(['/Portal']);
   }
 }

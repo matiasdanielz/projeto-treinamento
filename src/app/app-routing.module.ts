@@ -1,16 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { portalGuard } from './guards/portal/portal.guard';
+import { autenticacaoGuard } from './guards/autenticacao/autenticacao.guard';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'Portal',
+    pathMatch: 'prefix'
+  },
+  {
     path: 'Portal',
     loadChildren: () => import('./modules/portal/portal.module').then(m => m.PortalModule),
-    pathMatch: 'full'
+    pathMatch: 'prefix',
+    canActivate: [
+      portalGuard
+    ]
   },
   {
     path: 'Autenticacao',
     loadChildren: () => import('./modules/autenticacao/autenticacao.module').then(m => m.AutenticacaoModule),
-    pathMatch: 'full'
+    pathMatch: 'prefix',
+    canActivate: [
+      autenticacaoGuard
+    ]
   },
 ];
 
