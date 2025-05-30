@@ -8,11 +8,12 @@ import { ComponentesDefaultModule } from '../../componentes/componentes-default.
 
 @NgModule({
   declarations: [
-    TelaLoginComponent
+    TelaLoginComponent,
   ],
   imports: [
     CommonModule,
     AutenticacaoRoutingModule,
+    ComponentesDefaultModule
   ]
 })
 export class AutenticacaoModule { }

@@ -14,6 +14,7 @@ import { ComponentesDefaultModule } from '../../componentes/componentes-default.
   imports: [
     CommonModule,
     PortalRoutingModule,
+    ComponentesDefaultModule
   ]
 })
 export class PortalModule { }
