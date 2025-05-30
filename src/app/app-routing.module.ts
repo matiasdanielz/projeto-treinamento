@@ -6,24 +6,18 @@ import { autenticacaoGuard } from './guards/autenticacao/autenticacao.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'Portal',
+    redirectTo: 'portal',
     pathMatch: 'prefix'
   },
   {
-    path: 'Portal',
+    path: 'portal',
     loadChildren: () => import('./modules/portal/portal.module').then(m => m.PortalModule),
-    pathMatch: 'prefix',
-    canActivate: [
-      portalGuard
-    ]
+    pathMatch: 'prefix'
   },
   {
-    path: 'Autenticacao',
+    path: 'autenticacao',
     loadChildren: () => import('./modules/autenticacao/autenticacao.module').then(m => m.AutenticacaoModule),
-    pathMatch: 'prefix',
-    canActivate: [
-      autenticacaoGuard
-    ]
+    pathMatch: 'prefix'
   },
 ];
 

@@ -6,11 +6,11 @@ import { TelaLoginComponent } from './tela-login/tela-login.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'Login',
+    redirectTo: 'login',
     pathMatch: 'prefix'
   },
   {
-    path: 'Login',
+    path: 'login',
     component: TelaLoginComponent
   }
 ];

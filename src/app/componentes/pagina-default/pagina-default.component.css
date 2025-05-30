@@ -1,0 +1,16 @@
+.page-container {
+    padding: 10px;
+}
+
+.page-title {
+    font-size: 2rem;
+    color: #003a79;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 100px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}

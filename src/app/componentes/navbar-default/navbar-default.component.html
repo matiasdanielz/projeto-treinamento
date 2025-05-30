@@ -1,0 +1,13 @@
+<nav>
+    <div class="logo">MinhaLogo</div>
+    <div class="nav-links">
+        <div
+            *ngFor="let item of navbarItems">
+            <a 
+                [href]="item.link">
+                {{item.nome}}
+            </a>
+        </div>
+
+    </div>
+</nav>
