@@ -24,8 +24,6 @@ export class PortalComponent implements AfterViewInit{
   constructor(){
   }
   ngAfterViewInit(): void {
-    this.navbar.mostraTexto1();
-
   }
 
   ngOnInit(): void {
